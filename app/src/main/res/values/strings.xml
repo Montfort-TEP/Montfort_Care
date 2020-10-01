@@ -13,4 +13,13 @@
     <string name="female">Female</string>
     <string name="other">Other</string>
     <string name="languagesKnown">Languages Known to Parents</string>
+    <string name="languagesUsed">Languages Used with Child</string>
+    <string name="Hindi">Hindi</string>
+    <string name="English">English</string>
+    <string name="Marathi">Marathi</string>
+    <string name="ageDetected">Age at which Child\'s Hearing loss Detected</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="Therapy">Therapy Attended?</string>
+    <string name="hearingAidFitted">Age Hearing Aid Fitted</string>
 </resources>
