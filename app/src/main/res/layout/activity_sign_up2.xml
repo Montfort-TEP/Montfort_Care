@@ -201,7 +201,7 @@
         android:layout_height="50dp"
         android:fontFamily="@font/alice"
         android:text="@string/cont"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
