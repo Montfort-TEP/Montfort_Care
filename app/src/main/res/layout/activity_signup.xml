@@ -62,7 +62,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/postal"
-            android:inputType="textPostalAddress"
+            android:inputType="text"
             android:autofillHints="" />
 
         <EditText
