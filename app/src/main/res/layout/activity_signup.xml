@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.576">
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/cNamee"
             android:layout_width="316dp"
             android:layout_height="64dp"
             android:layout_marginStart="10dp"
@@ -33,7 +33,7 @@
             android:autofillHints="" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/pName"
             android:layout_width="316dp"
             android:layout_height="64dp"
             android:layout_marginStart="10dp"
@@ -44,18 +44,18 @@
             android:autofillHints="" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName9"
+            android:id="@+id/contact"
             android:layout_width="316dp"
             android:layout_height="64dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="@string/emailaddress"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:autofillHints="" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName10"
+            android:id="@+id/address"
             android:layout_width="317dp"
             android:layout_height="64dp"
             android:layout_marginStart="10dp"
@@ -66,7 +66,7 @@
             android:autofillHints="" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName11"
+            android:id="@+id/pwd"
             android:layout_width="316dp"
             android:layout_height="64dp"
             android:layout_marginStart="10dp"
@@ -77,7 +77,7 @@
             android:inputType="textPassword" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName12"
+            android:id="@+id/pwd2"
             android:layout_width="316dp"
             android:layout_height="64dp"
             android:layout_marginStart="10dp"

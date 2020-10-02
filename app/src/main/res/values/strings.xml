@@ -2,7 +2,7 @@
     <string name="app_name">Montfort Care</string>
     <string name="child_name">Child\'s Name</string>
     <string name="parent_name">Parent\'s Name</string>
-    <string name="emailaddress">Email Address</string>
+    <string name="emailaddress">Email Address or Phone Number</string>
     <string name="postal">Address</string>
     <string name="password">Password</string>
     <string name="confPass">Confirm Password</string>
