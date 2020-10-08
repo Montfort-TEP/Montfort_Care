@@ -23,10 +23,10 @@
         app:layout_constraintVertical_bias="0.576">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/Gender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="20dp"
             android:text="@string/Gender"
             android:textAlignment="center"
             android:textSize="24sp" />
@@ -58,14 +58,14 @@
                 android:text="@string/other"/>
         </RadioGroup>
 
-<!--        <TextView-->
-<!--            android:id=""-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="11dp"-->
-<!--            android:text="@string/languagesKnown"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textSize="24sp" />-->
+        <TextView
+            android:id="@+id/pLangTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="@string/languagesKnown"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,7 +73,7 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox6"
+                android:id="@+id/pHindi"
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -82,28 +82,28 @@
                 />
 
             <CheckBox
-                android:id="@+id/checkBox7"
+                android:id="@+id/pEnglish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/English"/>
 
             <CheckBox
-                android:id="@+id/checkBox8"
+                android:id="@+id/pMarathi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/Marathi" />
         </LinearLayout>
 
-<!--        <TextView-->
-<!--            android:id=""-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="11dp"-->
-<!--            android:text="@string/languagesUsed"-->
-<!--            android:textAlignment="center"-->
-<!--            android:textSize="24sp" />-->
+        <TextView
+            android:id="@+id/cLangTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="@string/languagesUsed"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -111,6 +111,7 @@
             android:orientation="horizontal">
 
             <CheckBox
+                android:id="@+id/cHindi"
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -119,12 +120,14 @@
                 />
 
             <CheckBox
+                android:id="@+id/cEnglish"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/English"/>
 
             <CheckBox
+                android:id="@+id/cMarathi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -133,8 +136,9 @@
 
         <TextView
             android:layout_width="match_parent"
+            android:id="@+id/therapyTV"
             android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
+            android:layout_marginTop="11dp"
             android:text="@string/Therapy"
             android:textAlignment="center"
             android:textSize="24sp" />
@@ -143,26 +147,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <RadioButton
                 android:layout_width="wrap_content"
+                android:id="@+id/therapyYes"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="100dp"
                 android:text="@string/Yes"
-                android:textAlignment="center"/>
+                android:textAlignment="center" />
 
             <RadioButton
+                android:id="@+id/therapyNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
-                android:text="@string/No"/>
+                android:text="@string/No" />
         </RadioGroup>
 
         <EditText
-            android:id="@+id/editTextTextPersonName9"
+            android:id="@+id/hearinglossAge"
             android:layout_width="316dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="8dp"
             android:autofillHints=""
             android:ems="10"
             android:hint="@string/ageDetected"
@@ -170,11 +177,11 @@
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
+            android:id="@+id/cAge"
             android:layout_width="316dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="13dp"
             android:autofillHints=""
             android:ems="10"
             android:fontFamily="sans-serif"
@@ -183,10 +190,11 @@
             android:textSize="18sp" />
 
         <EditText
+            android:id="@+id/hearingaidAge"
             android:layout_width="316dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="15dp"
             android:autofillHints=""
             android:ems="10"
             android:fontFamily="sans-serif"
@@ -196,7 +204,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/signupButton2"
         android:layout_width="156dp"
         android:layout_height="50dp"
         android:fontFamily="@font/alice"
@@ -210,7 +218,5 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.307" />
 
-    <!-- AUDIOGRAM + "Take Asessment" still left -->
-    <!--  AUDIOGRAM = NOT SURE HOW TO DO    -->
-
+    <!-- AUDIOGRAM + "Take Asessment" still left, not sure how to do the AUDIOGRAM -->
 </androidx.constraintlayout.widget.ConstraintLayout>

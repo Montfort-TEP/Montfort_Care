@@ -22,4 +22,8 @@
     <string name="No">No</string>
     <string name="Therapy">Therapy Attended?</string>
     <string name="hearingAidFitted">Age Hearing Aid Fitted</string>
+    <string name="username">Username</string>
+    <string name="mobNo_EmailID">Mobile Number/Email ID</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
 </resources>
