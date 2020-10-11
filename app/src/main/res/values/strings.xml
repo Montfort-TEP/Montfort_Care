@@ -26,4 +26,6 @@
     <string name="mobNo_EmailID">Mobile Number/Email ID</string>
     <string name="login">Login</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
 </resources>
