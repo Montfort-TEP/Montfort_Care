@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_home"
-            android:title="Home"
-            android:icon="@drawable/home_icon" />
-        <item
-            android:id="@+id/therapyCentre"
-            android:title="Therapy Centre"
-            android:icon="@drawable/ic_hearing_24" />
-        <item
-            android:id="@+id/Assessments"
-            android:title="Assessments"
-            android:icon="@drawable/ic_assessment" />
-        <item
-            android:id="@+id/childProgress"
-            android:title="Child's Progress"
-            android:icon="@drawable/ic_progress_24" />
-        <item
-            android:id="@+id/Resources"
-            android:title="Resources"
-            android:icon="@drawable/ic_baseline_library_books_24" />
-    </group>
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:title="Home"-->
+<!--            android:icon="@drawable/home_icon" />-->
+<!--        <item-->
+<!--            android:id="@+id/therapyCentre"-->
+<!--            android:title="Therapy Centre"-->
+<!--            android:icon="@drawable/ic_hearing_24" />-->
+<!--        <item-->
+<!--            android:id="@+id/Assessments"-->
+<!--            android:title="Assessments"-->
+<!--            android:icon="@drawable/ic_assessment" />-->
+<!--        <item-->
+<!--            android:id="@+id/childProgress"-->
+<!--            android:title="Child's Progress"-->
+<!--            android:icon="@drawable/ic_progress_24" />-->
+<!--        <item-->
+<!--            android:id="@+id/Resources"-->
+<!--            android:title="Resources"-->
+<!--            android:icon="@drawable/ic_baseline_library_books_24" />-->
+<!--    </group>-->
 
     <group android:checkableBehavior="single">
         <item android:title="Profile">
@@ -29,7 +29,7 @@
                 <item
                     android:id="@+id/nav_login"
                     android:title="@string/login"
-                    android:icon="@drawable/ic_login_24px" />
+                    android:icon="@drawable/ic_login_24px"/>
                 <item
                     android:id="@+id/nav_profile"
                     android:title="User Settings"
@@ -38,7 +38,6 @@
                     android:id="@+id/nav_logout"
                     android:title="Log out"
                     android:icon="@drawable/logout_24"/>
-
             </menu>
         </item>
     </group>
@@ -46,6 +45,9 @@
     <group android:checkableBehavior="single">
     <item android:title="Communicate">
         <menu>
+            <item
+                android:icon="@drawable/ic_info_24"
+                android:title="Introduction"/>
             <item
                 android:icon="@drawable/share_24"
                 android:title="Share our App!" />

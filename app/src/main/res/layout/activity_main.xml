@@ -17,7 +17,11 @@
             android:id="@+id/nav_view"
             app:headerLayout="@layout/header"
             app:menu="@menu/main_menu"
-            android:layout_gravity="start"/>
+            android:layout_gravity="start"
+            app:itemTextColor="@color/drawer_menu_color"
+            app:itemIconTint="@color/drawer_menu_color"
+            app:itemBackground="@android:color/transparent"
+        />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,12 +29,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="409dp"
         android:layout_height="0dp"
-        android:layout_marginLeft="2dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="4dp"
         android:background="#00FFFFFF"
         android:minHeight="?attr/actionBarSize"
@@ -59,6 +63,10 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <androidx.cardview.widget.CardView
+            android:stateListAnimator="@anim/animation"
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/early_identified"
+            android:clickable="true"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -70,27 +78,35 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/image"
+                    android:id="@+id/introIcon"
                     android:layout_width="136dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
                     android:maxWidth="75dp"
-                    app:srcCompat="@drawable/ic_info_24" />
+                    app:srcCompat="@drawable/ic_baseline_child_care_24"
+                    android:contentDescription="An icon"/>
 
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/image"
+                    android:layout_below="@id/introIcon"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="11dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
                     android:fontFamily="@font/poppinsbold"
-                    android:text="Introduction" />
+                    android:text="Early Identified\n(0-3 Years)"
+                    android:textAlignment="center"
+                    />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:stateListAnimator="@anim/animation"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:id="@+id/late_identified"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
@@ -102,27 +118,28 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView3"
+                    android:id="@+id/therapyCentreIcon"
                     android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_height="70dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
+                    android:contentDescription="@string/an_icon_for_therapy_centre"
                     app:srcCompat="@drawable/ic_hearing_24" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/therapyCentreTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/imageView3"
+                    android:layout_below="@id/therapyCentreIcon"
                     android:layout_centerInParent="true"
-                    android:layout_marginTop="11dp"
+                    android:layout_marginTop="3dp"
                     android:fontFamily="@font/poppinsbold"
-                    android:text="Therapy Centre" />
+                    android:textAlignment="center"
+                    android:text="Late Identified\n(3-6 Years)" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="0dp"
@@ -155,6 +172,7 @@
                     android:layout_height="75dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
+                    android:contentDescription="@string/assessment_icon"
                     android:maxWidth="75dp"
                     app:srcCompat="@drawable/ic_assessment" />
 
@@ -165,7 +183,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="11dp"
                     android:fontFamily="@font/poppinsbold"
-                    android:text="Assessments" />
+                    android:text="@string/assessments" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -186,7 +204,8 @@
                     android:layout_height="75dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
-                    app:srcCompat="@drawable/ic_progress_24" />
+                    app:srcCompat="@drawable/ic_progress_24"
+                    android:contentDescription="@string/an_icon_for_progress"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -195,7 +214,7 @@
                     android:layout_centerInParent="true"
                     android:layout_marginTop="11dp"
                     android:fontFamily="@font/poppinsbold"
-                    android:text="Child's Progress" />
+                    android:text="@string/child_progress" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -230,10 +249,10 @@
                     android:layout_height="75dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
+                    android:contentDescription="@string/an_icon_for_resources"
                     android:maxWidth="75dp"
-                    app:srcCompat="@drawable/ic_baseline_library_books_24"
 
-                    />
+                    app:srcCompat="@drawable/ic_baseline_library_books_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -242,7 +261,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="11dp"
                     android:fontFamily="@font/poppinsbold"
-                    android:text="Resources" />
+                    android:text="@string/resources" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -263,6 +282,7 @@
                     android:layout_height="75dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
+                    android:contentDescription="@string/an_icon_for_about_us"
                     app:srcCompat="@drawable/ic_baseline_announcement_24" />
 
                 <TextView
@@ -272,7 +292,7 @@
                     android:layout_centerInParent="true"
                     android:layout_marginTop="11dp"
                     android:fontFamily="@font/poppinsbold"
-                    android:text="About Us" />
+                    android:text="@string/about_us" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>

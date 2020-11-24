@@ -28,4 +28,25 @@
     <string name="forgot_password">Forgot Password?</string>
     <string name="navigation_drawer_open">Open Navigation Drawer</string>
     <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="introduction">Introduction</string>
+    <string name="therapy_centre">Early Identified</string>
+    <string name="assessments">Assessments</string>
+    <string name="child_progress">Child\'s Progress</string>
+    <string name="resources">Resources</string>
+    <string name="about_us">About Us</string>
+    <string name="assessment_icon">Assessment Icon</string>
+    <string name="an_icon_for_information">An Icon for Information</string>
+    <string name="an_icon_for_progress">An icon for progress</string>
+    <string name="an_icon_for_resources">An icon for resources</string>
+    <string name="an_icon_for_about_us">An icon for About Us</string>
+    <string name="an_icon_for_therapy_centre">Early Identified(O-3 years)</string>
+    <string name="place_holder_text">Place Holder Text</string>
+    <string name="early_identified">Early Identified (0-3 Years)</string>
+    <string name="first_year">First Year</string>
+    <string name="second_year">Second Year</string>
+    <string name="third_year">Third Year</string>
+    <string name="late_identified">Late Identified (3-6 Years)</string>
+    <string name="fourth_year">Fourth Year</string>
+    <string name="fifth_year">Fifth Year</string>
+    <string name="sixth_year">Sixth Year</string>
 </resources>
