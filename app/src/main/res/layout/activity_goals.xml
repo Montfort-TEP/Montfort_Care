@@ -35,24 +35,25 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="391dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:stretchColumns="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:stretchColumns="1"
         app:layout_constraintTop_toBottomOf="@+id/goalsTv">
 
         <TableRow
-            android:id="@+id/audition_content"
+            android:id="@+id/audition_row"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="5dp">
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="1dp">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/audition_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
@@ -61,8 +62,8 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/textView6"
-                android:layout_width="276dp"
+                android:id="@+id/audition_content"
+                android:layout_width="280dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="0dp"
@@ -71,8 +72,10 @@
         </TableRow>
 
         <View
-            android:layout_height="2dip"
-            android:background="#FF909090" />
+            android:layout_height="2dp"
+            android:layout_marginTop="1dp"
+            android:background="#FF909090"
+            android:paddingTop="2dp" />
 
         <TableRow
             android:layout_width="match_parent"
@@ -82,17 +85,17 @@
             android:layout_marginEnd="5dp">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/language_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_column="1"
                 android:text="Language"
                 android:textColor="@android:color/black"
-                android:layout_column="1"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/language_content"
-                android:layout_width="276dp"
+                android:layout_width="280dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="12dp"
                 android:text="@string/place_holder_text" />
@@ -110,17 +113,17 @@
             android:layout_marginEnd="5dp">
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/speech_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:text="Speech"
                 android:textColor="@android:color/black"
-                android:textSize="20dp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/speech_content"
-                android:layout_width="286dp"
+                android:layout_width="280dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="12dp"
                 android:text="@string/place_holder_text" />
@@ -138,7 +141,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="35dp"
         android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -148,7 +151,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="35dp"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
