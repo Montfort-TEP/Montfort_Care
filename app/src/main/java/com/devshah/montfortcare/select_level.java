@@ -23,9 +23,9 @@ public class select_level extends AppCompatActivity {
         setContentView(R.layout.activity_select_level);
         yeartext = findViewById(R.id.year_textview);
         monthtext = findViewById(R.id.months_txt);
-        String yeartv_text = getIntent().getStringExtra("year");
+        final String yeartv_text = getIntent().getStringExtra("year");
         yeartext.setText(yeartv_text);
-        String monthtv_text = getIntent().getStringExtra("month");
+        final String monthtv_text = getIntent().getStringExtra("month");
         monthtext.setText(monthtv_text);
         button1 = findViewById(R.id.selectlevel_bt1);
         button2 = findViewById(R.id.selectlevel_bt2);
@@ -77,6 +77,8 @@ public class select_level extends AppCompatActivity {
                 intent5.putExtra("year", yearnum);
                 intent5.putExtra("month", yearquater);
                 intent5.putExtra("level", 1);
+                intent5.putExtra("month_string", monthtv_text);
+                intent5.putExtra("year_string", yeartv_text);
                 startActivity(intent5);
             }
         });
@@ -87,6 +89,8 @@ public class select_level extends AppCompatActivity {
                 intent5.putExtra("year", yearnum);
                 intent5.putExtra("month", yearquater);
                 intent5.putExtra("level", 2);
+                intent5.putExtra("month_string", monthtv_text);
+                intent5.putExtra("year_string", yeartv_text);
                 startActivity(intent5);
             }
         });
@@ -97,6 +101,8 @@ public class select_level extends AppCompatActivity {
                 intent5.putExtra("year", yearnum);
                 intent5.putExtra("month", yearquater);
                 intent5.putExtra("level", 3);
+                intent5.putExtra("month_string", monthtv_text);
+                intent5.putExtra("year_string", yeartv_text);
                 startActivity(intent5);
             }
         });
@@ -107,6 +113,8 @@ public class select_level extends AppCompatActivity {
                 intent5.putExtra("year", yearnum);
                 intent5.putExtra("month", yearquater);
                 intent5.putExtra("level", 4);
+                intent5.putExtra("month_string", monthtv_text);
+                intent5.putExtra("year_string", yeartv_text);
                 startActivity(intent5);
             }
         });
