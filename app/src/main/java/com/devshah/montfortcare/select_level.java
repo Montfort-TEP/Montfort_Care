@@ -1,6 +1,9 @@
 package com.devshah.montfortcare;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +13,10 @@ public class select_level extends AppCompatActivity {
     TextView monthtext;
     int yearnum;
     int yearquater;
+    Button button1;
+    Button button2;
+    Button button3;
+    Button button4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +27,10 @@ public class select_level extends AppCompatActivity {
         yeartext.setText(yeartv_text);
         String monthtv_text = getIntent().getStringExtra("month");
         monthtext.setText(monthtv_text);
+        button1 = findViewById(R.id.selectlevel_bt1);
+        button2 = findViewById(R.id.selectlevel_bt2);
+        button3 = findViewById(R.id.selectlevel_bt3);
+        button4 = findViewById(R.id.selectlevel_bt4);
        switch (yeartv_text){
            case "First Year":
                yearnum = 1;
@@ -59,7 +70,45 @@ public class select_level extends AppCompatActivity {
                yearquater = 99;
                break;
        }
-//       yeartext.setText(" "+yearnum);
-//       monthtext.setText(""+yearquater);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent5 = new Intent(getBaseContext(), Goals.class);
+                intent5.putExtra("year", yearnum);
+                intent5.putExtra("month", yearquater);
+                intent5.putExtra("level", 1);
+                startActivity(intent5);
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent5 = new Intent(getBaseContext(), Goals.class);
+                intent5.putExtra("year", yearnum);
+                intent5.putExtra("month", yearquater);
+                intent5.putExtra("level", 2);
+                startActivity(intent5);
+            }
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent5 = new Intent(getBaseContext(), Goals.class);
+                intent5.putExtra("year", yearnum);
+                intent5.putExtra("month", yearquater);
+                intent5.putExtra("level", 3);
+                startActivity(intent5);
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent5 = new Intent(getBaseContext(), Goals.class);
+                intent5.putExtra("year", yearnum);
+                intent5.putExtra("month", yearquater);
+                intent5.putExtra("level", 4);
+                startActivity(intent5);
+            }
+        });
     }
 }

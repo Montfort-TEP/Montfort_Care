@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".select_level"></activity>
+        <activity android:name=".Goals"></activity>
+        <activity android:name=".select_level" />
         <activity android:name=".Select_Month" />
 
         <meta-data
